@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <!-- meta tags, links to css, etc. -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIG 245 Unbrand</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +12,31 @@
     <!-- visible content goes here -->
     <h1>DIG 245 Unbrand</h1>
     <div class="center-container">
-        <img src="assets/img/Desktop2.png"></img>
+        <div class="image-container">
+            <img id= "original" src="assets/img/Desktop1.png"></img>
+            <img id="new" src="assets/img/Desktop2.png"></img>
+        </div>
+        <div id= "hover" class="box" onmouseover="change_image()"></div>
     </div>
 </body>
 </html>
+
+<script>
+
+    const defaultImage = document.getElementById('original');
+    const hoverImage = document.getElementById('new');
+    const hoverBox = document.getElementById('hover');
+
+
+
+    hoverBox.addEventListener('mouseover', () => {
+        defaultImage.style.display = 'none';
+        hoverImage.style.display = 'block';
+    })
+
+    hoverBox.addEventListener('mouseout', () => {
+        hoverImage.style.display = 'none';
+        defaultImage.style.display = 'block';
+    })
+
+</script>

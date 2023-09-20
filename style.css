@@ -1,4 +1,29 @@
-body{
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
   background-color: #18A1DC;
 }
 
+.center-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 500px; 
+  height: 600px; 
+}

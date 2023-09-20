@@ -13,7 +13,7 @@ body {
 
 img {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -21,7 +21,7 @@ img {
 .box {
   opacity: 0;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%); 
   width: 500px; 
